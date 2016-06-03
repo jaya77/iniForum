@@ -1,0 +1,33 @@
+<ion-view view-title="Posting">
+  <ion-content>
+
+   <div class="list">
+
+     <label class="item item-input">
+       <input type="text" placeholder="Judul" ng-model="postku.judul">
+     </label>
+
+     <label class="item item-input item-select">
+       <div class="input-label">
+         Kategori
+       </div>
+       <select ng-model="postku.selectedItem">
+         <option ng-repeat="data in datakategoris" value="{{data.id_kategori}}">{{data.judul_kategori}}</option>
+       </select>
+
+     </label>
+
+    <label class="item item-input">
+       <textarea placeholder="isi" ng-model="postku.isi"></textarea>
+     </label>
+
+       <input type="hidden" placeholder="{{namauser}}" ng-model="postku.username"  ng-init="postku.username = namauser">
+   </div>
+
+
+   <button class="button button-block button-balanced" ng-click="simpan(postku);">POST</button>
+
+
+  </ion-content>
+</ion-view>
+

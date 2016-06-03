@@ -1,0 +1,7 @@
+<ion-view view-title="Kategori">
+  <ion-content>
+      <ion-item class="item" ng-repeat=" tampil in datakategoris track by $index" type="item-text-wrap" href="#/app/kategori/{{tampil.id_kategori}}">
+          <h2>{{tampil.judul_kategori}}</h2>
+      </ion-item>
+  </ion-content>
+</ion-view>

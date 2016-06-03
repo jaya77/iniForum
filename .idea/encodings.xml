@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/www/css/style.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/js/app.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/js/controllers.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/js/services.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/templates/adminMember.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/templates/adminartikel.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/templates/adminkategori.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/templates/buatartikel.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/templates/buatposting.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/templates/ckeditor.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/templates/kategori.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/templates/kategoridetail.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/templates/keluar.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/templates/latest.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/templates/login.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/templates/member.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/templates/menu.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/templates/pesan.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/templates/pesanHeader.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/templates/posting.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/templates/postingdetail.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/templates/register.html" charset="UTF-8" />
+  </component>
+</project>

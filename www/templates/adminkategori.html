@@ -1,0 +1,71 @@
+<ion-view view-title="Kategori">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-icon-right" ng-repeat="tampilktgr in datakategoris track by $index" type="item-text-wrap" href="">
+        <h2>{{tampilktgr.judul_kategori}}</h2>
+
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-positive" ng-click="edit(tampilktgr)">
+          Edit
+        </ion-option-button>
+
+        <ion-option-button class="button-assertive" ng-click="remove(tampilktgr)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+      <button class="button button-balanced button-block" ng-click="tambahModal()">Tambah Kategori</button>
+    </ion-list>
+  </ion-content>
+</ion-view>
+
+<script id="edit.html" type="text/ng-template">
+  <div class="modal">
+    <ion-header-bar class="bar-stable">
+      <h1 class="title"> Edit Kategori</h1>
+      <button class="button button-clear button-positive" ng-click="bataledit()">Batal</button>
+    </ion-header-bar>
+    <ion-content>
+      <form>
+        <div class="list">
+          <label class="item item-input">
+            <span class="input-label">ID :</span>
+            <input type="hidden" placeholder="{{tampilktgr.id_kategori}}" ng-model="tampilktgr.id_kategori" init-from-form>
+            <p>{{tampilktgr.id_kategori}}</p>
+          </label>
+          <label class="item item-input">
+            <span class="input-label">Nama Kategori:</span>
+            <input type="text" ng-model="tampilktgr.judul_kategori" placeholder="{{tampilktgr.judul_kategori}}" init-from-form>
+          </label>
+
+          <button class="button button-positive button-block" ng-click="editsimpan(tampilktgr)">
+            Save
+          </button>
+        </div>
+      </form>
+    </ion-content>
+  </div>
+</script>
+
+<script id="tambah.html" type="text/ng-template">
+  <div class="modal">
+    <ion-header-bar class="bar-stable">      
+      <h1 class="title"> Tambah Kategori</h1>
+      <button class="button button-icon icon ion-ios7-close-outline" ng-click="batal()">Batal</button>
+    </ion-header-bar>
+    <ion-content>
+      <form>
+        <div class="list">
+          <label class="item item-input">
+            <span class="input-label">Nama Kategori:</span>
+            <input type="text" ng-model="kategori.nama" placeholder="Nama Kategori">
+          </label>
+
+          <button class="button button-positive button-block" ng-click="simpan(kategori)">
+            Save
+          </button>
+        </div>
+      </form>
+    </ion-content>
+  </div>
+</script>

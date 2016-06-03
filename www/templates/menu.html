@@ -1,0 +1,51 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-positive">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+
+  <ion-side-menu side="left">
+    <ion-header-bar class="bar-positive">
+      <h1 class="title">Menu</h1>
+
+    </ion-header-bar>
+    <ion-content class="custom">
+      <ion-list>
+        <ion-item class="item item-thumbnail-left" menu-close>
+          <img ng-src="http://localhost/Backend/img/luffy.jpg" style="border-radius:50%;">
+          <br>
+          <p><h2>{{namauser}} </h2></p>
+          <p><h2>{{akses}}</h2></p>
+        </ion-item>
+        <ion-item ng-repeat="data in menuList" class="item-icon-left" href="{{data.href}}" ng-show="{{data.show}}"><i class="icon {{data.icon}}"></i>
+          {{data.labels}}
+        </ion-item>
+        <!--<ion-item class="item-icon-left" href="#/app/pesan"><i class="icon ion-android-mail"></i>-->
+          <!--Pesan-->
+        <!--</ion-item>-->
+        <!--<ion-item  class="item-icon-left" href="#/app/posting"><i class="icon ion-android-create"></i>-->
+          <!--Posting-->
+        <!--</ion-item>-->
+        <!--<ion-item class="item-icon-left" href="#/app/kategori"><i class="icon ion-ios-list-outline"></i>-->
+          <!--Kategori-->
+        <!--</ion-item>-->
+        <!--<ion-item  class="item-icon-left" href="#/app/member"><i class="icon ion-android-people"></i>-->
+          <!--Anggota-->
+        <!--</ion-item>-->
+        <!--<ion-item href="#/app/register">Register</ion-item>-->
+        <!--<ion-item  class="item-icon-left" href="#/app/keluar"><i class="icon ion-android-exit"></i>-->
+          <!--Keluar-->
+        <!--</ion-item>-->
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

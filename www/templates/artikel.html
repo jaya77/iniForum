@@ -1,0 +1,11 @@
+<ion-view view-title="Artikel">
+  <ion-content>
+    <div class="list">
+
+    <a class="item item-thumbnail-left" ng-repeat=" tampil in dataartikel track by $index" >
+      <img src="http://localhost/Backend/img/artikel/{{tampil.gambar}}">
+      <h2>{{tampil.jdul_artikel}}</h2>
+    </a>
+</div>
+  </ion-content>
+</ion-view>

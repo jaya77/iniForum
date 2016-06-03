@@ -1,0 +1,8 @@
+{
+  "name": "hello-ionic",
+  "private": "true",
+  "devDependencies": {},
+  "dependencies": {
+    "angular-moment": "^0.10.3"
+  }
+}
